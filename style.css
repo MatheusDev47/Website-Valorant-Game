@@ -1,0 +1,325 @@
+/* LAYOUT */
+html,body{
+	height: 100%;
+}
+
+#home{
+	height: 100%;
+}
+
+#agents{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+
+#about{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#footer{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #050914;
+}
+
+/* PARALLAX EFFECT */
+body{
+	background: url(images/body_img.jpg) no-repeat;
+				background-position: bottom;
+				background-size: cover;
+				background-attachment: fixed;
+}
+
+/* CLASSES DE ESTILOS ADICIONAIS */
+nav.opacity{
+	padding: 15px;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+/* MENU MOBILE */
+nav.mobile-menu{
+	padding: 5px 0 0 50px;
+	z-index: 9999;
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	background-color: #050914;
+	transform: translate(2000px, 0);
+	transition: .7s;
+}
+
+ul.mobile-menu{
+	opacity: 0;
+	text-align: left;
+	transition: opacity 1.8s;
+}
+
+a.mobile-menu{
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #fff;
+	transition: .3s;
+}
+
+a.mobile-menu:hover{
+	color: #ff3b51;
+}
+
+nav.animation-menu{
+	transform: translate(0, 0);
+}
+
+ul.animation-menu{
+	opacity: 1;
+}
+
+.color{
+	font-size: 1.2rem;
+	color: #fff;
+	transition: .3s;
+}
+
+.color:hover{
+	color: #ff3b51;
+}
+
+.btn-size{
+	font-size: 2rem;
+}
+
+.center{
+	text-align: center;
+}
+
+.title{
+	color: #050914;
+	font-weight: 900;
+	font-size: 6rem;
+	text-transform: uppercase;
+}
+
+.btn-custom{
+	color: #fff;
+	font-size: 2rem;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.4s;
+	padding: 10px 30px;
+}
+
+.btn-custom-mobile{
+	width: 100%;
+	height: 60px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 22px;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;	
+	text-transform: uppercase;
+	transition: background 0.4s;
+}
+
+.btn-red{
+	background-color: #ff3b51;
+}
+
+.btn-black{
+	background-color: #050914;
+}
+
+.btn-red:hover{
+	color: #fff;
+	background-color: #cc4554;
+}
+
+.btn-black:hover{
+	color: #fff;
+	background-color: #000;
+}
+
+.btn-black-diff{
+	color: #fff;
+	border: 3px solid #ff3b51;
+	background-color: 0;
+}
+
+.btn-black-diff:hover{
+	color: #fff;
+	background-color: #ff3b51;
+}
+
+.btn-menu-responsive{
+	display: none;
+}
+
+h2.red{
+	font-size: 3rem;
+	color: #ff3b51;
+	font-weight: 700;
+}
+
+h3.red{
+	font-size: 2rem;
+	color: #ff3b51;
+	font-weight: 700;
+}
+
+h2.black{
+	font-size: 3rem;
+	color: #050914;
+	font-weight: 700;
+}
+
+p.white{
+	color: #fff;
+	font-size: 1rem;
+	line-height: 1.3rem;
+}
+
+a.white{
+	color: #fff;
+}
+
+a.white:hover{
+	color: #ff3b51;
+}
+
+h4.gray{
+	color: #919496;
+	font-size: 1rem;	
+}
+
+a.no-decoration{
+	text-decoration: none;
+}
+
+i{
+	cursor: pointer;
+}
+
+i.icon-font{
+	color: #fff;
+	font-size: 3rem;
+	transition: .3s;
+}
+
+i.icon-font:hover{
+	color: #ff3b51;
+}
+
+.carousel-control-next, .carousel-control-prev{
+	width: 5%;
+}
+
+/* ANIMAÇÃO JS */
+[data-fade]{
+	opacity: 0;
+	transition: 1s;
+}
+
+[data-fade].anima-fade{
+	opacity: 1;
+}
+
+[data-transition]{
+	opacity: 0;
+	transform: translate3d(100px, 0, 0);
+	transition: 1s;
+}
+
+[data-transition="left"]{
+	opacity: 0;
+	transform: translate3d(-100px, 0, 0);
+	transition: 1s;
+}
+
+[data-transition].anima-transition{
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+img.effect-hover{
+	transform: scale(1);
+	transition: 1s;
+}
+
+img.effect-hover:hover{
+	transform: scale(1.2, 1.2);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px) {
+	#agents{
+		padding-top: 0;
+	}
+
+	.title{
+		font-size: 3rem;
+	}
+
+	.btn-custom{
+		padding: 8px 15px;
+		font-size: 1.5rem;
+	}
+
+	h4.gray{
+		font-size: .8rem;
+	}
+
+	i.icon-font{
+		font-size: 2.5rem;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.hidden{
+		display: none;
+	}
+
+	.btn-menu-responsive{
+		display: block;
+	}
+
+	.title{
+		font-size: 2.5rem;
+	}
+
+	.btn-custom{
+		margin: 10px 15px; 
+	}
+
+	#footer ul{
+		margin-bottom: 20px;
+	}
+
+	h4.gray{
+		font-size: 1rem;
+	}
+
+	h4.gray:nth-of-type(1){
+		margin-top: 15px;
+	}
+
+	[data-transition]{
+		transform: none;
+	}
+
+	[data-transition="left"]{
+		transform: none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	nav.mobile-menu{
+		width: 100%;
+		left: 0;
+	}
+}

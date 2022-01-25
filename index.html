@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css"> 
+	<!-- Icon Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<!-- ICON -->
+	<link rel="icon" href="">
+	<title>Diversão para todos - Valorant</title>
+</head>
+<body>
+
+	<header>
+		<!-- Desktop Menu -->
+		<nav class="opacity navbar navbar-expand-md fixed-top">
+			<div class="container">
+				<!-- LOGO -->
+				<a href="index.html" class="navbar-brand">
+					<img src="images/logo.png" width="60">
+				</a>
+				
+				<!-- btn open -->
+				<i class="bi bi-list btn-size color d-block d-md-none" id="btn-open"></i>
+
+				<!-- NAVEGAÇÃO -->
+				<ul class="navbar-nav ms-auto hidden">
+					<li class="nav-item">
+						<a class="nav-link color" href="#">Member</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link color" href="#">Help</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link color" href="#">Download</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link color" href="#">Sign up</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link color" href="#">Login</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Mobile Menu -->
+		<nav class="mobile-menu" id="nav-mobile">
+			<ul class="mobile-menu navbar-nav" id="ul-mobile">
+				<!-- btn close -->
+				<i class="bi bi-x-circle-fill btn-size color text-end me-3" id="btn-close"></i>
+			
+				<img class="img-fluid mb-5 mt-4" src="Images/logo_valorant_name.png" width="140">
+				<li class="mb-5 mobile-menu">
+					<a class="no-decoration mobile-menu" href="#">Member</a>
+				</li>
+				<li class="mb-5">
+					<a class="no-decoration mobile-menu" href="#">Help</a>
+				</li>
+				<li class="mb-5">
+					<a class="no-decoration mobile-menu" href="#">Download</a>
+				</li>
+				<li class="mb-5">
+					<a class="no-decoration mobile-menu" href="#">Sign up</a>
+				</li>
+				<li class="mb-4">
+					<a class="no-decoration mobile-menu" href="#">Login</a>
+				</li>
+				<li class="mt-4 pe-4">
+					<a class="btn btn-custom-mobile btn-red" href="#">Play Now</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="home" class="d-flex">
+		<div class="container align-self-center ">
+			<div class="row">
+				<div class="col-lg-12 center">
+					<div id="slider" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<h1 class="display-4 title">A game for everyone</h1>
+								<a class="btn btn-custom btn-red" href="#">Download Valorant</a>
+								<a class="btn btn-custom btn-black" href="#">Buy Battle Pass</a>
+							</div>
+							<div class="carousel-item">
+								<h1 class="display-4 title">The best game</h1>
+								<a class="btn btn-custom btn-black-diff" href="#"><i class="me-3 bi bi-controller" style="font-size: 1.5rem;"></i>Play Valorant</a>
+							</div>
+						</div>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+						    <i style="font-size: 70px" class="fas fa-caret-left mb-5"></i>
+						 </button>
+
+						 <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+						    <i style="font-size: 70px;" class="fas fa-caret-right mb-5"></i>
+						 </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="agents">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="row mt-5">
+						<div class="col-lg-6">
+							<img src="images/astra.jpg" class="img-fluid mb-5 d-none d-lg-block" data-fade="fade">
+							<img src="images/sage.jpg" class="img-fluid mb-5 d-none d-lg-block" data-fade="fade">
+						</div>
+						<div class="col-lg-6">
+							<img src="images/jett.jpg" class="img-fluid mb-5 d-none d-lg-block" data-fade="fade">
+							<img src="images/sova.jpg" class="img-fluid mb-5 d-none d-lg-block" data-fade="fade">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-transition="transition">
+					<h2 class="red">Valorant Agents</h2>
+					<h3 class="red">Controller</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed semper sapien. Fusce rutrum molestie malesuada. Vivamus ante dolor, rutrum eu felis id, suscipit molestie urna. Cras blandit sed metus ut fringilla. Morbi posuere posuere lacus, nec maximus metus ornare in.</p>	
+					<h3 class="red">Sentinel</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed semper sapien. Fusce rutrum molestie malesuada. Vivamus ante dolor, rutrum eu felis id, suscipit molestie urna. Cras blandit sed metus ut fringilla. Morbi posuere posuere lacus, nec maximus metus ornare in.</p>		
+					<h3 class="red">Duelist</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed semper sapien. Fusce rutrum molestie malesuada. Vivamus ante dolor, rutrum eu felis id, suscipit molestie urna. Cras blandit sed metus ut fringilla. Morbi posuere posuere lacus, nec maximus metus ornare in.</p>		
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4" data-transition="left">
+					<h2 class="black">Valorant Agents</h2>
+					<h3 class="red">Controller</h3>
+					<p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed semper sapien. Fusce rutrum molestie malesuada. Vivamus ante dolor, rutrum eu felis id, suscipit molestie urna. Cras blandit sed metus ut fringilla. Morbi posuere posuere lacus, nec maximus metus ornare in.</p>	
+					<h3 class="red">Sentinel</h3>
+					<p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed semper sapien. Fusce rutrum molestie malesuada. Vivamus ante dolor, rutrum eu felis id, suscipit molestie urna. Cras blandit sed metus ut fringilla. Morbi posuere posuere lacus, nec maximus metus ornare in.</p>		
+					<h3 class="red">Duelist</h3>
+					<p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed semper sapien. Fusce rutrum molestie malesuada. Vivamus ante dolor, rutrum eu felis id, suscipit molestie urna. Cras blandit sed metus ut fringilla. Morbi posuere posuere lacus, nec maximus metus ornare in.</p>		
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-lg-6">
+							<img src="images/jett_png.png" class="d-none d-lg-block img-fluid effect-hover" data-fade="" onmouseover="document.getElementById('player_jett').play()">
+							<audio id="player_jett" autoplat="autoplay">
+								<source src="song/jett_voice.mp3" type="audio/mp3">
+							</audio>
+						</div>
+						<div class="col-lg-6">
+							<img src="images/phoenix_png.png" class="d-none d-lg-block img-fluid effect-hover" data-fade="" onmouseover="document.getElementById('player_phoenix').play()">
+							<audio id="player_phoenix" autoplat="autoplay">
+								<source src="song/phoenix_voice.mp3" type="audio/mp3">
+							</audio>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md	-2">
+					<img src="Images/logo_valorant.png" class="img-fluid" width="142">
+				</div>
+				<div class="col-md-2">
+					<h4 class="gray">COMPANY</h4>
+					<ul class="navbar-nav">
+						<li class=""><a class="no-decoration white" href="#">About</a></li>
+						<li class=""><a class="no-decoration white" href="#">Jobs</a></li>
+						<li class=""><a class="no-decoration white" href="#">Press</a></li>
+						<li class=""><a class="no-decoration white" href="#">News</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h4 class="gray">COMMUNITIES</h4>
+					<ul class="navbar-nav">
+						<li class=""><a class="no-decoration white" href="#">Artists</a></li>
+						<li class=""><a class="no-decoration white" href="#">Developers</a></li>
+						<li class=""><a class="no-decoration white" href="#">Brands</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h4 class="gray">USEFUL LINKS</h4>
+					<ul class="navbar-nav">
+						<li class=""><a class="no-decoration white" href="#">Help</a></li>
+						<li class=""><a class="no-decoration white" href="#">Gifts</a></li>
+						<li class=""><a class="no-decoration white" href="#">Web player</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<a href="#"><i class="bi bi-steam icon-font"></i></a>
+					<a href="#"><i class="bi bi-playstation icon-font ms-3"></i></a>
+					<a href="#"><i class="bi bi-xbox icon-font ms-3"></i></a>
+				</div>	
+			</div>
+		</div>
+	</footer>
+
+
+<!-- jQuery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Custom JavaScript -->
+<script src="functions.js"></script>
+</body>
+</html>
