@@ -26,7 +26,7 @@ html,body{
 
 /* PARALLAX EFFECT */
 body{
-	background: url(images/body_img.jpg) no-repeat;
+	background: url(Images/body_img.jpg) no-repeat;
 				background-position: bottom;
 				background-size: cover;
 				background-attachment: fixed;
@@ -119,6 +119,7 @@ ul.animation-menu{
 	line-height: 40px;
 	color: #fff;
 	font-size: 22px;
+	font-weight: 500;
 	border-radius: 500px;
 	-webkit-border-radius: 500px;
 	-moz-border-radius: 500px;	
@@ -321,5 +322,21 @@ img.effect-hover:hover{
 	nav.mobile-menu{
 		width: 100%;
 		left: 0;
+	}
+}
+
+@media screen and (max-height: 665px) {
+	.mobile-menu li{
+		margin-bottom: 30px !important;
+	}
+	
+	a.mobile-menu{
+		font-size: 1.3rem;
+	}
+
+	.btn-custom-mobile{
+		height: 50px;
+		line-height: 30px;
+		font-size: 17px;
 	}
 }
